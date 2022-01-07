@@ -9,6 +9,9 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
+    volumes: 
+      - /tmp/data:/var/lib/mysql
+      
 
   adminer:
     image: adminer
